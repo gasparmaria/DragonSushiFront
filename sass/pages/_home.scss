@@ -1,0 +1,74 @@
+.hero {
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__text {
+        &__title {
+            font-family: 'Patua One', cursive;
+            font-size: 4.6rem;
+            font-weight: 400;
+            color: $primary-color;
+            margin: 0;
+        }
+        &__paragraph {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: $primary-text-color;
+            margin: 40px 0 60px 0;
+        }
+        &__link {
+            width: 175px;
+            height: 52px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            background-color: $primary-color;
+            color: $secondary-text-color;
+            img {
+                width: 34px;
+            }
+        }
+    }
+    &__img {
+        img {
+            max-width: 450px;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .hero {
+        .container {
+            flex-direction: column;
+            gap: 25px;
+        }
+        &__text {
+            width: 100%;
+            text-align: center;
+            &__link {
+                width: 200px;
+                gap: 15px;
+                margin: 0 auto;
+                img {
+                    width: 34px;
+                }
+            }
+        }
+        &__img {
+            order: -1;
+            img {
+                max-width: 300px;
+                display: block;
+            }
+        }
+    }
+}
