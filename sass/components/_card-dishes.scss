@@ -1,0 +1,92 @@
+.card-dishes {
+    &.container {
+        margin: 80px auto 0 auto;
+    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 90px;
+    justify-content: center;
+    padding: 2.0rem;
+    &__item {
+        border-radius: 100px 100px 10px 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: relative;
+        height: 350px;
+        &__img {
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            border-radius: 100%;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__title {
+            font-family: 'Montserrat', sans-serif;
+            margin-top: -60px;
+            padding: 0 20px;
+            color: $primary-text-color;
+            font-size: 20px;
+            word-break: break-word;
+        }
+        &__paragraph {
+            margin-top: 20px;
+            padding: 0 20px;
+            color: $primary-text-color;
+            line-height: 1.4;
+            font-size: 16px;
+            text-align: left;
+            word-break: break-word;
+        }  
+        &__info-buy {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            bottom: 30px;
+            padding: 0 20px;
+            &__price {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                color: $tertiary-color;
+            }
+            &__icon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $primary-color;
+                border-radius: 50%;
+                .icon-iconify {
+                    font-size: 24px;
+                    color: $secondary-text-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .main-dishes {
+        &__title {
+            word-break: break-word;
+            text-align: center;
+        }
+        .card-dishes {
+            grid-gap: 90px 20px;
+        }
+    }
+}
+    
