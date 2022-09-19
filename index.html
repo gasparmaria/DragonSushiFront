@@ -33,8 +33,6 @@
 
         font-family: 'Open Sans', sans-serif;
           - Font weight: 300, 400 and 700
-
-        Oi gab :) - teste git
     -->
 
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
@@ -46,25 +44,795 @@
 
     </header>
     <main>
+        <!-- 
+            Hero
+         -->
         <section class="hero">
             <div class="container">
                 <div class="hero__text">
                     <h1 class="hero__text__title">Faça já seu pedido!</h1>
                     <p class="hero__text__paragraph">
-                        Experimente o melhor do oriente sem sair de casa.<br>
+                        Experimente o melhor do oriente sem sair de casa.<br class="line-break">
                         Veja nossos pratos, bebidas e venha se deliciar!                    
                     </p>
-                    <a class="hero__text__link" href="#">Peça agora <img src="images/icon-chopsticks.png" alt=""></a>
+                    <a class="accent-button hero__text__link" href="#">Peça agora <img src="images/icon-chopsticks.png" alt=""></a>
                 </div>
                 <picture class="hero__img">
                     <img src="images/home/hero.png" alt="Fazendo sushi">
                 </picture>
             </div>
         </section>
+
+        <!-- 
+            Pratos mais VENDIDOS
+         -->
+        <section class="main-dishes">
+            <h1 class="main-dishes__title">PRATOS MAIS VENDIDOS</h1>
+            <div class="card-dishes container">
+                <div class="card-dishes__item">
+                    <picture class="card-dishes__item__img">
+                        <img src="images/home/prato-1.jpg" alt="">
+                    </picture>
+                    <h1 class="card-dishes__item__title">
+                        Kawaii sushi
+                    </h1>
+                    <p class="card-dishes__item__paragraph">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Praesentium similique magnam voluptate.
+                    </p>
+                    <div class="card-dishes__item__info-buy">
+                        <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                        <span class="card-dishes__item__info-buy__icon">
+                            <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-dishes__item">
+                    <picture class="card-dishes__item__img">
+                        <img src="images/home/prato-2.jpg" alt="">
+                    </picture>
+                    <h1 class="card-dishes__item__title">
+                        Sushi and chopsticks
+                    </h1>
+                    <p class="card-dishes__item__paragraph">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Praesentium similique magnam voluptate.
+                    </p>
+                    <div class="card-dishes__item__info-buy">
+                        <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                        <span class="card-dishes__item__info-buy__icon">
+                            <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-dishes__item">
+                    <picture class="card-dishes__item__img">
+                        <img src="images/home/prato-3.jpg" alt="">
+                    </picture>
+                    <h1 class="card-dishes__item__title">
+                        Nigiri sushi
+                    </h1>
+                    <p class="card-dishes__item__paragraph">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Praesentium similique magnam voluptate.
+                    </p>
+                    <div class="card-dishes__item__info-buy">
+                        <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                        <span class="card-dishes__item__info-buy__icon">
+                            <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            Cardápio do RESTAURANTE
+         -->
+        <section class="restaurant-menu">
+            <div class="container">
+                <h1 class="restaurant-menu__title">CARDÁPIO</h1>
+                <p class="restauurant-menu__paragraph">
+                    Descubra pratos novos todos os dias na Dragon Sushi!
+                </p>
+            </div>
+            <!-- 
+                Pratos da lista de ENTRADAS 
+            -->
+            <section class="restaurant-menu__list-dishe">
+                <div class="container">
+                    <h1 class="restaurant-menu__title-type-dishe">ENTRADAS</h1>
+                </div>
+                <div class="card-dishes container">
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-1.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Kawaii sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-2.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Sushi and chopsticks
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 
+                Pratos da lista de PRATOS QUENTES
+             -->
+            <section class="restaurant-menu__list-dishe">
+                <div class="container">
+                    <h1 class="restaurant-menu__title-type-dishe">PRATOS QUENTES</h1>
+                </div>
+                <div class="card-dishes container">
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-1.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Kawaii sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-2.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Sushi and chopsticks
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 
+                Baixe nosso APP
+             -->
+            <section class="download-app">
+                <div class="container">
+                    <div class="download-app__text">
+                        <h1 class="download-app__text__title">
+                            Baixe o nosso App
+                        </h1>
+                        <p class="download-app__text__paragraph">
+                            Confira nossos pratos, bebidas<br>e ofertas tudo na palma da sua mão.
+                        </p>
+                        <span>
+                            * Disponível apenas para Android
+                        </span>
+                    </div>
+                    <div class="download-app__img">
+                        <img class="mokup" src="images/home/mokup.png" alt="">
+                        <img class="mokup-inverse" src="images/home/mokup.png" alt="">
+                    </div>
+                    <div class="download-app__button">
+                        <a class="accent-button" href="#">Baixe agora <iconify-icon class="icon-iconify" icon="ant-design:download-outlined"></iconify-icon></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--    
+                Pratos da lista de TEMAKIS
+             -->
+             <section class="restaurant-menu__list-dishe">
+                <div class="container">
+                    <h1 class="restaurant-menu__title-type-dishe">TEMAKIS</h1>
+                </div>
+                <div class="card-dishes container">
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-1.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Kawaii sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-2.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Sushi and chopsticks
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--    
+                Pratos da lista de PEÇAS
+             -->
+             <section class="restaurant-menu__list-dishe">
+                <div class="container">
+                    <h1 class="restaurant-menu__title-type-dishe">PEÇAS</h1>
+                </div>
+                <div class="card-dishes container">
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-1.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Kawaii sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-2.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Sushi and chopsticks
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--    
+                Pratos da lista de COMBOS
+             -->
+             <section class="restaurant-menu__list-dishe">
+                <div class="container">
+                    <h1 class="restaurant-menu__title-type-dishe">COMBOS</h1>
+                </div>
+                <div class="card-dishes container">
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-1.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Kawaii sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-2.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Sushi and chopsticks
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--    
+                Pratos da lista de BEBIDAS
+             -->
+             <section class="restaurant-menu__list-dishe">
+                <div class="container">
+                    <h1 class="restaurant-menu__title-type-dishe">BEBIDAS</h1>
+                </div>
+                <div class="card-dishes container">
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-1.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Kawaii sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-2.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Sushi and chopsticks
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-dishes__item">
+                        <picture class="card-dishes__item__img">
+                            <img src="images/home/prato-3.jpg" alt="">
+                        </picture>
+                        <h1 class="card-dishes__item__title">
+                            Nigiri sushi
+                        </h1>
+                        <p class="card-dishes__item__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Praesentium similique magnam voluptate.
+                        </p>
+                        <div class="card-dishes__item__info-buy">
+                            <span class="card-dishes__item__info-buy__price">R$ 80,50</span>
+                            <span class="card-dishes__item__info-buy__icon">
+                                <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="who-we-are">        
+            <div class="container">
+                <div class="who-we-are__text">
+                    <h1 class="who-we-are__title">SOBRE NÓS</h1>
+                    <p class="who-we-are__paragraph">
+                        O melhor restaurante japonês localizado na capital de São Paulo, perto de você!
+                        Iniciamos nossa atuação de maneira simples, em um local pequeno, usando comandas em papel.
+                        <br class="line-break">
+                        <br class="line-break">
+                        Com a mudança para um restaurante maior, precisamos nos informatizar.
+                        Em 2020, tornamo-nos cliente da Westen contratando um sistema desktop, utilizado por seus funcionários.
+                    </p>
+                </div>
+                <picture class="who-we-are__img">
+                    <img src="images/home/quem-somos.png" alt="">
+                </picture>
+            </div>
+        </section>
+        <section class="localization">
+            <div class="container">
+                <p class="localization__paragraph">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores magni minus labore voluptates omnis. Dolor harum, fuga officiis a sapiente et facere culpa, maiores ut, sunt ipsum repellendus doloribus commodi.
+                </p>
+            </div>
+            <div class="localization__iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14633.597310106976!2d-46.72953756729347!3d-23.518135679919713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1663593605683!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
-    <footer>
-
-
+    <footer class="footer">
+        <div class="footer__container-img">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="container">
+            <h1 class="footer__title">DRAGON SUSHI</h1>
+        </div>
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__info__links">
+                    <h2 class="footer__info__title">Links</h2>
+                    <ul class="footer__info__links__list">
+                        <li>> Home</li>
+                        <li>> Cardápio</li>
+                        <li>> Quem Somos</li>
+                    </ul>
+                </div>
+                <div class="footer__info__social">
+                    <h2 class="footer__info__title">Social</h2>
+                    <ul class="footer__info__links__list">
+                        <li>> Instagram</li>
+                    </ul>
+                </div>
+                <div class="footer__info__address">
+                    <h2 class="footer__info__title">Endereço</h2>
+                    <ul class="footer__info__links__list">
+                        <li>R. Guiapá, 678, Villa Leopoldina,<br> São Paulo - SP.</li>
+                        <li>Telefone: (11) 3834-4111</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer__copyright">
+            <p class="footer__all-rights-reserved">
+                Copyright © 2022 Dragon Sushi | Todos os Direitos Reservados
+            </p>
+            <p class="footer__developers">
+                Desenvolvimento do Website: Westen
+            </p>
+        </div>
     </footer>
 </body>
 </html>
