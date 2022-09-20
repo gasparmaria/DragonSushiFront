@@ -303,68 +303,6 @@ button{
     }
 }
 
-.footer {
-    color: $secondary-text-color;
-    background-color: $tertiary-container-color;
-    padding: 0 0 60px 0;
-    &__container-img {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        position: relative;
-        img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 85px;
-        }
-    }
-    &__title {
-        font-size: 28px;
-        padding: 60px 85px 0 0;
-        font-family: 'Montserrat', sans-serif;
-        margin: 0 0 60px 0;
-    }
-    &__info {
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-wrap: wrap;
-        gap: 50px;
-        &__title {
-            font-size: 20px;
-            padding-bottom: 10px; 
-            border-bottom: 2px solid $secondary-text-color;
-        }
-        &__links {
-            &__list {
-                font-family: 'Roboto', sans-serif;
-                font-size: 16px;
-                list-style-type: none;
-                li {
-                    padding: 20px 10px 10px 0;
-                }
-            }
-        }
-        &__links, &__social, &__address {
-            flex: 0.10 0.10 200px;
-        }
-    }
-    &__copyright {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        border-top: 1px solid #ffffff;
-        color: #bbbbbb;
-        padding-top: 15px;
-        margin-top: 50px;
-        gap: 20px;
-        font-size: 14px;
-    }
-}
-
 @media (max-width: 990px) {
     .hero {
         .container {
@@ -441,24 +379,6 @@ button{
                     transform: scaleX(-1) translateX(-60px);
                 }
             }
-        }
-    }
-}
-
-@media (max-width: 520px) {
-    .footer {
-        &__container-img {
-            img {
-                width: 75px;
-            }
-        }
-        &__info {
-            flex-direction: column;
-            gap: 0px;
-        }
-        &__copyright {
-            flex-direction: column;
-            padding-top: 25px;
         }
     }
 }
