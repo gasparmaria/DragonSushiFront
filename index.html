@@ -36,34 +36,49 @@
     -->
 
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script defer src="js/script.js"></script>
 
     <title>Dragon Sushi - Restaurante Japonês</title>
 </head>
 <body>
-    <header>
-    <div class="container_principal">      
-            <div class="banner_dragonsushi">
-                <img src="images/home/banner_dragonsushi.png"></img>       
-            </div>
+    <header class=" header">
+        <!-- <div class="container">
+            <div class="search-bar-mobile">
 
-            <ul class="header_links">    
-                    <li><a class="header_a" href="#">Home</a></li>
-                    <li><a class="header_a" href="#">Cardápio</a></li>
-                    <li><a class="header_a" href="#">Quem Somos</a></li>                 
-            </ul>
-            
-            <div class="container_pesquisa">
-                <div class="box">
-                    <img src="images/home/icone_pesquisa.png">
-                    <input type="text" name="">
-                </div>
             </div>
-            
-            <div class="botoes">
-                <button class="btn_cad">Cadastrar-se</button>
-                <button class="btn_entrar">Entrar</button>
+        </div> -->
+        <div class="container">
+            <div class="header__logo">
+                <img src="images/logo.png" alt="">
             </div>
-    </div>     
+            <div class="header__mobile-menu">
+                <div class="header__mobile-menu__line-one"></div>
+                <div class="header__mobile-menu__line-two"></div>
+                <div class="header__mobile-menu__line-three"></div>
+            </div>
+            <nav class="header__navigation-menu">
+                <ul class="header__navigation-menu__list">
+                    <div class="header__navigation-menu__list__links">
+                        <li class="header__navigation-menu__list__links__item"><a href="#">Home</a></li>
+                        <li class="header__navigation-menu__list__links__item"><a href="#cardapio">Cardápio</a></li>
+                        <li class="header__navigation-menu__list__links__item"><a href="#quem-somos">Quem somos</a></li>
+                    </div>
+                    <div class="header__navigation-menu__list__container">
+                        <div class="search-bar header__navigation-menu__list__search-bar">
+                            <a class="search-bar__icon header__navigation-menu__list__search-bar__icon" href="#">
+                                <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                            </a>
+                            <input class="search-bar__txt header__navigation-menu__list__search-bar__txt" type="text"
+                            placeholder="O que deseja?">
+                        </div>
+                        <div class="header__navigation-menu__list__buttons">
+                            <a class="accent-button header__navigation-menu__list__buttons__item" href="#">Cadastra-se</a>
+                            <a class="accent-button header__navigation-menu__list__buttons__item" href="#">Entrar</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <!-- 
@@ -77,7 +92,7 @@
                         Experimente o melhor do oriente sem sair de casa.<br class="line-break">
                         Veja nossos pratos, bebidas e venha se deliciar!                    
                     </p>
-                    <a class="accent-button hero__text__link" href="#">Peça agora <img src="images/icon-chopsticks.png" alt=""></a>
+                    <a class="accent-button hero__text__link" href="#cardapio">Peça agora <img src="images/icon-chopsticks.png" alt=""></a>
                 </div>
                 <picture class="hero__img">
                     <img src="images/home/hero.png" alt="Fazendo sushi">
@@ -153,7 +168,7 @@
          -->
         <section class="restaurant-menu">
             <div class="container">
-                <h1 class="restaurant-menu__title">CARDÁPIO</h1>
+                <h1 id="cardapio" class="restaurant-menu__title">CARDÁPIO</h1>
                 <p class="restauurant-menu__paragraph">
                     Descubra pratos novos todos os dias na Dragon Sushi!
                 </p>
@@ -789,14 +804,14 @@
         <section class="who-we-are">        
             <div class="container">
                 <div class="who-we-are__text">
-                    <h1 class="who-we-are__title">SOBRE NÓS</h1>
+                    <h1 id="quem-somos" class="who-we-are__title">SOBRE NÓS</h1>
                     <p class="who-we-are__paragraph">
                         O melhor restaurante japonês localizado na capital de São Paulo, perto de você!
                         Iniciamos nossa atuação de maneira simples, em um local pequeno, usando comandas em papel.
                         <br class="line-break">
                         <br class="line-break">
                         Com a mudança para um restaurante maior, precisamos nos informatizar.
-                        Em 2020, tornamo-nos cliente da Westen contratando um sistema desktop, utilizado por seus funcionários.
+                        Em 2020, nos tornamos clientes da Westen contratando um sistema desktop, utilizado por seus funcionários.
                     </p>
                 </div>
                 <picture class="who-we-are__img">
@@ -828,8 +843,8 @@
                     <h2 class="footer__info__title">Links</h2>
                     <ul class="footer__info__links__list">
                         <li><a href="#">> Home</a></li>
-                        <li><a href="#">> Cardápio</a></li>
-                        <li><a href="#">> Quem Somos</a></li>
+                        <li><a href="#cardapio">> Cardápio</a></li>
+                        <li><a href="#quem-somos">> Quem Somos</a></li>
                     </ul>
                 </div>
                 <div class="footer__info__social">

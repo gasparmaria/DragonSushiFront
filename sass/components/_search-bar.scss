@@ -1,0 +1,31 @@
+.search-bar {
+    background-color: #ffffff;
+    height: 42px;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    border: 2px solid #dfdfdf;
+    gap: 10px;
+    &__txt {
+        width: 100%;
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        font-size: 14px;
+        color: $primary-text-color;
+        // line-height: 40px;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .iconify-icon {
+            font-size: 26px;
+            color: #dfdfdf;
+        }
+    }
+}
