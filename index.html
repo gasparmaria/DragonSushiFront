@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <meta name="keywords" content="Restaurante, Japonês, Delivery, Sushi, Temaki, ">
     <meta name="description" content="Faça já seu pedido na Dragon Sushi! Confira nossos pratos, ofertas e muito mais!">
@@ -36,25 +36,26 @@
     -->
 
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script defer src="js/jquery-3.6.1.min.js"></script>
     <script defer src="js/script.js"></script>
 
     <title>Dragon Sushi - Restaurante Japonês</title>
 </head>
 <body>
     <header class=" header">
-        <!-- <div class="container">
-            <div class="search-bar-mobile">
-
-            </div>
-        </div> -->
         <div class="container">
             <div class="header__logo">
                 <img src="images/logo.png" alt="">
             </div>
-            <div class="header__mobile-menu">
-                <div class="header__mobile-menu__line-one"></div>
-                <div class="header__mobile-menu__line-two"></div>
-                <div class="header__mobile-menu__line-three"></div>
+            <div class="header__container-menu-icon">
+                <div class="header__search-bar-icon">
+                    <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                </div>
+                <div class="header__mobile-menu">
+                    <div class="header__mobile-menu__line-one"></div>
+                    <div class="header__mobile-menu__line-two"></div>
+                    <div class="header__mobile-menu__line-three"></div>
+                </div>
             </div>
             <nav class="header__navigation-menu">
                 <ul class="header__navigation-menu__list">
@@ -78,6 +79,34 @@
                     </div>
                 </ul>
             </nav>
+           <div class="header__profile__container__tooltip-shopping-cart">
+                <div class="header__profile__shopping-cart">
+                    <a href="#">
+                        <span>
+                            <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="header__profile__tooltip">
+                    <iconify-icon class="iconify-icon" icon="gg:profile"></iconify-icon>
+                    <div class="header__profile__tooltip__text">
+                        <h1>Minha conta</h1>
+                        <ul>
+                            <li><a href="#">Editar perfil</a></li>
+                            <li><a href="#">Histórico de pedidos</a></li>
+                        </ul>
+                    </div>
+                </div>    
+           </div>           
+        </div>
+        <div class="search-bar-mobile">
+            <div class="search-bar mobile header__navigation-menu__list__search-bar">
+                <a class="search-bar__icon header__navigation-menu__list__search-bar__icon" href="#">
+                    <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                </a>
+                <input class="search-bar__txt header__navigation-menu__list__search-bar__txt" type="text"
+                placeholder="O que deseja?">
+            </div>
         </div>
     </header>
     <main>
@@ -867,7 +896,7 @@
                 Copyright © 2022 Dragon Sushi | Todos os Direitos Reservados
             </p>
             <p class="footer__developers">
-                Desenvolvimento do Website: Westen
+                Desenvolvido por Westen
             </p>
         </div>
     </footer>
