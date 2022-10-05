@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <meta name="keywords" content="Restaurante, Japonês, Delivery, Sushi, Temaki, ">
+    <meta name="description" content="Faça já seu pedido na Dragon Sushi! Confira nossos pratos, ofertas e muito mais!">
+    <meta name="author" content="Gabriel S. Evangelista, Henrique R. Pereira, Guilherme Ferreira, Gustavo Basilio, Maria Eduarda G. Lima, Guilherme Lemes">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- 
+        Fonts: Montserrat, Roboto and Patua One
+
+        font-family: 'Montserrat', sans-serif;
+          - Font weight: 300, 400, 600 and 700
+
+        font-family: 'Roboto', sans-serif;
+          - Font weight: 300, 400 and 700
+
+        font-family: 'Patua One', cursive;
+          - Font weight: 400
+
+        font-family: 'Open Sans', sans-serif;
+          - Font weight: 300, 400 and 700
+    -->
+
+    <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script defer src="js/jquery-3.6.1.min.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Dragon Sushi - Restaurante Japonês</title>
+</head>
+<body class="sign-up-page">
+    <a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+    <main class="sign-up">
+        <picture class="background-image">
+            <img src="images/sign-up/sign-up-background.png" alt="">
+        </picture>
+        
+        <form action="" class="form">
+            <h1 class="form__title">Crie sua conta</h1>
+            <p class="form__paragraph">Não fique de fora! Receba ofertas, novidades e<br class="line-break"> muito mais.</p>
+            <div class="form-container-flex">
+                <div class="form__box">
+                    <label class="form__box__label" for="name">Nome</label>
+                    <div class="form__box__input-icon">
+                        <iconify-icon icon="bxs:user"></iconify-icon>
+                        <input id="name" type="text" placeholder="Digite seu nome completo">
+                    </div>
+                </div>
+                <div class="form__box">
+                    <label class="form__box__label" for="email">E-mail</label>
+                    <div class="form__box__input-icon">
+                        <iconify-icon icon="eva:email-fill"></iconify-icon>
+                        <input id="email" type="email" placeholder="Digite seu e-mail">
+                    </div>
+                </div>
+            </div>
+            <div class="form__box">
+                <label class="form__box__label" for="phone">Telefone</label>
+                <div class="form__box__input-icon">
+                    <iconify-icon icon="bi:phone-fill"></iconify-icon>
+                    <input id="phone" type="text" placeholder="Digite seu e-mail">
+                </div>
+            </div>
+            <div class="form__box">
+                <label class="form__box__label" for="password">Senha</label>
+                <div class="form__box__input-icon">
+                    <iconify-icon icon="uis:padlock"></iconify-icon>
+                    <input id="password" type="password" placeholder="Digite sua senha">
+                </div>
+            </div>
+            <div class="form__box">
+                <label class="form__box__label" for="confirm-password">Confirmar senha</label>
+                <div class="form__box__input-icon">
+                    <iconify-icon icon="uis:padlock"></iconify-icon>
+                    <input id="confirm-password" type="password" placeholder="Confirme sua senha">
+                </div>
+            </div>
+            <button class="form__button">
+                Cadastrar-se
+            </button>
+            <p class="form__paragraph">
+                Já possui cadastro?
+                <span class="form__paragraph__accent-text">
+                    <a href="#">Faça seu login!</a>
+                </span>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

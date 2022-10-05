@@ -1,0 +1,78 @@
+.form {
+    border-radius: 20px;
+    display: block;
+    background: $quaternary-container-color;
+    padding: 30px;
+    width: 600px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    &__title {
+        margin: 0;
+        font-size: 28px;
+        color: $primary-color;
+    }
+    &__paragraph {
+        &__accent-text {
+            a {
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+    }
+    .form-container-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        div {
+            flex: 1 1 250px;
+        }
+    }
+    &__box {
+        &__label {
+            color: $primary-color;
+            font-size: 16px;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 5px;
+        }
+        &__input-icon {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background: #ffffff;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 5px;
+            iconify-icon {
+                color: $primary-color;
+                font-size: 24px;
+            }
+            input {
+                width: 100%;
+                outline: none;
+                border: none;
+                font-size: 14px;
+            }
+        }
+    }
+    &__button {
+        background-color: $primary-color;
+        font-size: 18px;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        width: 200px;
+        height: 45px;
+        cursor: pointer;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+}

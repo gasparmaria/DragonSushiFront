@@ -7,7 +7,8 @@
 // Components
 @import 'components/_card-dishes';
 @import 'components/_button';
-@import 'components/search-bar';
+@import 'components/_search-bar';
+@import 'components/_form';
 
 // Layout
 @import 'layout/_container';
@@ -16,6 +17,7 @@
 
 // Pages
 @import 'pages/_home';
+@import 'pages/_sign-up';
 
 // Vendors
 @import 'vendors/_normalize';
