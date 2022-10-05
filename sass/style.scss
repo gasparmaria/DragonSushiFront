@@ -18,6 +18,7 @@
 // Pages
 @import 'pages/_home';
 @import 'pages/_sign-up';
+@import 'pages/_login';
 
 // Themes
 @import 'themes/_employee';
@@ -26,7 +27,6 @@
 
 // Vendors
 @import 'vendors/_normalize';
-@import 'vendors/_css-for-sass';
 
 // node-sass -w --output-style compressed sass/style.scss css/style.css
 // A ordem dos importes influência na sobreposição de classes
