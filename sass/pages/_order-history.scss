@@ -1,0 +1,48 @@
+.order-history-page {
+    .footer {
+        margin-top: 50px;
+    }
+}
+.order-history {
+    &__title {
+        font-size: 32px;
+        color: $primary-color;
+        font-family: 'Patua One', sans-serif;
+        font-weight: 400;
+        margin: 40px 0;
+    }
+    table {
+        text-align: left;
+        font-size: 16px;
+        color: $primary-text-color;
+        border-collapse: collapse;
+        width: 60vw;
+        max-width: 100%;    
+        // margin: 0 auto; 
+        tr {
+            text-align: sub;
+            vertical-align: sub;
+            th {
+                padding-bottom: 10px;
+            }
+            td {
+                text-align: sub;
+                padding: 15px 15px 15px 0;
+                ul {
+                    list-style: none;
+                }
+            }
+        }
+    }
+    table, tr, th, td {
+        border-bottom: 2px solid rgb(214, 214, 214);
+    }
+}
+
+@media (max-width: 900px) {
+    .order-history {
+        table {
+            width: 100vw; 
+        }
+    }
+}
