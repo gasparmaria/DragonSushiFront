@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <meta name="keywords" content="Restaurante, Japonês, Delivery, Sushi, Temaki, ">
     <meta name="description" content="Faça já seu pedido na Dragon Sushi! Confira nossos pratos, ofertas e muito mais!">
@@ -23,7 +23,7 @@
         Fonts: Montserrat, Roboto and Patua One
 
         font-family: 'Montserrat', sans-serif;
-          - Font weight: 300, 400, 600 and 70
+          - Font weight: 300, 400, 600 and 700
 
         font-family: 'Roboto', sans-serif;
           - Font weight: 300, 400 and 700
@@ -36,12 +36,13 @@
     -->
 
     <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script defer src="js/jquery-3.6.1.min.js"></script>
     <script defer src="js/script.js"></script>
 
     <title>Dragon Sushi - Restaurante Japonês</title>
 </head>
-<body>
-    <header class=" header">
+<body class="specific-dish-page">
+    <header class="header">
         <div class="container">
             <div class="header__logo">
                 <img src="images/logo.png" alt="">
@@ -108,72 +109,46 @@
             </div>
         </div>
     </header>
-    <main>
-        <h1 class="inventory_title">Estoque</h1>
-    <div class="content">
-        <div class="inventory_container">
-           <div class="container_inventory">
-                <img src="images/inventory/comida-1.png">
-                <h1 class="inventory_text">Camarão</h1>
-                <div class="quantity_border">
-                    <a class="quantity_inventory">6kg</a>
-                </div>
+    <main class="specific-dishe">
+        <div class="container">
+            <h1 class="specific-dishe__title">Kawaii sushi</h1>
+        </div>
+        <div class="container flex">
+            <div class="specific-dishe__container-img">
+                <img src="images/home/prato-3.jpg" alt="">
             </div>
-
-            <div class="container_inventory">
-                <img src="images/inventory/comida-2.png">
-                <h1 class="inventory_text">Salmão</h1>
-                <div class="quantity_border">
-                    <a class="quantity_inventory">12kg</a>
-                </div>
-            </div>           
-
-            <div class="container_inventory">
-                <img src="images/inventory/comida-3.png">
-                <h1 class="inventory_text">Atum</h1>
-                <div class="quantity_border">
-                    <a class="quantity_inventory">10kg</a>
-                </div>
-            </div>
-
-            <div class="container_inventory">
-                <img src="images/inventory/comida-4.png">
-                <h1 class="inventory_text">Peixe Branco</h1>
-                <div class="quantity_border">
-                    <a class="quantity_inventory">5kg</a>
-                </div>
-            </div>
-
-            <div class="container_inventory">
-                <img src="images/inventory/comida-5.png">
-                <h1 class="inventory_text">Cenoura</h1>
-                <div class="quantity_border">
-                    <a class="quantity_inventory">10kg</a>
-                </div>
-            </div>
-
-            <div class="container_inventory">
-                <img src="images/inventory/comida-1.png">
-                <h1 class="inventory_text">Sal</h1>
-                <div class="quantity_border">
-                    <a class="quantity_inventory">3kg</a>
-                </div>
+            <div class="specific-dishe__description">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam atque perferendis laboriosam dolorem sequi nobis vitae quia doloremque quam commodi maiores officia nesciunt id necessitatibus quod, possimus fuga repellendus optio?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore enim, ipsa distinctio dolor provident eligendi. Explicabo eligendi ea unde excepturi asperiores, veniam reprehenderit velit et, mollitia officia suscipit! Veniam, facere.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, corporis doloremque? Magnam, modi, sint quae repellendus quasi cumque obcaecati dolorum recusandae earum pariatur quaerat doloribus laboriosam iusto ut fugit eos.
+                </p>
             </div>
         </div>
-            <div class="border_total">
-                <div class="total_quantity">
-                    <h1 class="title_total">Quantidade Total</h1>               
-                </div>
-                <a class="total_text"><b>20kg</b> Camarão</a>
-                <a class="total_text"><b>45kg</b> Salmão</a>
-                <a class="total_text"><b>10kg</b> Atum</a>
-                <a class="total_text"><b>5kg</b> Peixe Branco</a>
-                <a class="total_text"><b>10kg</b> Cenoura</a>
-                <a class="total_text"><b>3kg</b> Sal</a>
+        <div class="container flex">
+            <div class="specific-dishe__note">
+                <h2 class="specific-dishe__note__title">OBSERVAÇÃO:</h2>
+                <p class="specific-dishe__note__paragraph">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo inventore ea exercitationem quam, corporis ex fuga aperiam expedita laudantium itaque tenetur, facere aspernatur, eos voluptatibus amet vero non. Optio, laborum!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima molestiae dicta, debitis maiores consectetur tempora voluptates doloremque eligendi fugit tenetur recusandae aspernatur repellat harum eum ex facere labore qui.
+                </p>
             </div>
-    </div>
-</main>
-
+            <div class="specific-dishe__price">
+                <div class="specific-dishe__price__unitary">
+                    <p>R$ 84,00</p>
+                </div>
+                <div class="specific-dishe__price__subtotal">
+                    <p>Subtotal: R$ 168,00</p>
+                    <div>
+                        <span class="specific-dishe__price__icon-add"></span>
+                        <span class="specific-dishe__prince__amount">1</span>
+                        <span class="specific-dishe__price__icon-subtract"></span>
+                    </div>
+                </div>
+                <button class="accent-button">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <div class="footer__container-img">
             <img src="images/logo.png" alt="">
@@ -211,7 +186,7 @@
                 Copyright © 2022 Dragon Sushi | Todos os Direitos Reservados
             </p>
             <p class="footer__developers">
-                Desenvolvimento do Website: Westen
+                Desenvolvido por Westen
             </p>
         </div>
     </footer>
