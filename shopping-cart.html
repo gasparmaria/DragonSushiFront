@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <meta name="keywords" content="Restaurante, Japonês, Delivery, Sushi, Temaki, ">
+    <meta name="description" content="Faça já seu pedido na Dragon Sushi! Confira nossos pratos, ofertas e muito mais!">
+    <meta name="author" content="Gabriel S. Evangelista, Henrique R. Pereira, Guilherme Ferreira, Gustavo Basilio, Maria Eduarda G. Lima, Guilherme Lemes">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- 
+        Fonts: Montserrat, Roboto and Patua One
+
+        font-family: 'Montserrat', sans-serif;
+          - Font weight: 300, 400, 600 and 700
+
+        font-family: 'Roboto', sans-serif;
+          - Font weight: 300, 400 and 700
+
+        font-family: 'Patua One', cursive;
+          - Font weight: 400
+
+        font-family: 'Open Sans', sans-serif;
+          - Font weight: 300, 400 and 700
+    -->
+
+    <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script defer src="js/jquery-3.6.1.min.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Dragon Sushi - Restaurante Japonês</title>
+</head>
+<body class="shopping-cart-page">
+    <header class=" header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="header__container-menu-icon">
+                <div class="header__search-bar-icon">
+                    <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                </div>
+                <div class="header__mobile-menu">
+                    <div class="header__mobile-menu__line-one"></div>
+                    <div class="header__mobile-menu__line-two"></div>
+                    <div class="header__mobile-menu__line-three"></div>
+                </div>
+            </div>
+            <nav class="header__navigation-menu">
+                <ul class="header__navigation-menu__list">
+                    <div class="header__navigation-menu__list__links">
+                        <li class="header__navigation-menu__list__links__item"><a href="#">Home</a></li>
+                        <li class="header__navigation-menu__list__links__item"><a href="#cardapio">Cardápio</a></li>
+                        <li class="header__navigation-menu__list__links__item"><a href="#quem-somos">Quem somos</a></li>
+                    </div>
+                    <div class="header__navigation-menu__list__container">
+                        <div class="search-bar header__navigation-menu__list__search-bar">
+                            <a class="search-bar__icon header__navigation-menu__list__search-bar__icon" href="#">
+                                <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                            </a>
+                            <input class="search-bar__txt header__navigation-menu__list__search-bar__txt" type="text"
+                            placeholder="O que deseja?">
+                        </div>
+                        <div class="header__navigation-menu__list__buttons">
+                            <a class="accent-button header__navigation-menu__list__buttons__item" href="#">Cadastra-se</a>
+                            <a class="accent-button header__navigation-menu__list__buttons__item" href="#">Entrar</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+           <div class="header__profile__container__tooltip-shopping-cart">
+                <div class="header__profile__shopping-cart">
+                    <a href="#">
+                        <span>
+                            <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="header__profile__tooltip">
+                    <iconify-icon class="iconify-icon" icon="gg:profile"></iconify-icon>
+                    <div class="header__profile__tooltip__text">
+                        <h1>Minha conta</h1>
+                        <ul>
+                            <li><a href="#">Editar perfil</a></li>
+                            <li><a href="#">Histórico de pedidos</a></li>
+                        </ul>
+                    </div>
+                </div>    
+           </div>           
+        </div>
+        <div class="search-bar-mobile">
+            <div class="search-bar mobile header__navigation-menu__list__search-bar">
+                <a class="search-bar__icon header__navigation-menu__list__search-bar__icon" href="#">
+                    <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                </a>
+                <input class="search-bar__txt header__navigation-menu__list__search-bar__txt" type="text"
+                placeholder="O que deseja?">
+            </div>
+        </div>
+    </header>
+    <main class="shopping-cart">
+        <div class="container">
+            <h1 class="shopping-cart__title">CARRINHO DE COMPRAS</h1>
+        </div>
+        <div class="container">
+            <!-- Carrinho de compras -->
+            <section class="shopping-cart__delivery">
+                <!-- Item carrinho de compras -->
+                <div class="shopping-cart__delivery__item">
+                    <div class="shopping-cart__delivery__item__container-img">
+                        <img src="images/home/prato-1.jpg" alt="">
+                    </div>
+                    <div class="shopping-cart__delivery__item__text">
+                        <h2 class="shopping-cart__delivery__item__text__title">Kawaii Sushi</h2>
+                        <p class="shopping-cart__delivery__item__text__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis 
+                        </p>
+                        <div class="shopping-cart__delivery__item__price">
+                            <p>R$ 84,00</p>
+                            <div class="amount-dishe-item">
+                                <span class="amount-dishe-item__subtract"></span>
+                                <span class="amount-dishe-item__current">1</span>
+                                <span class="amount-dishe-item__add"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart__delivery__item">
+                    <div class="shopping-cart__delivery__item__container-img">
+                        <img src="images/home/prato-1.jpg" alt="">
+                    </div>
+                    <div class="shopping-cart__delivery__item__text">
+                        <h2 class="shopping-cart__delivery__item__text__title">Kawaii Sushi</h2>
+                        <p class="shopping-cart__delivery__item__text__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
+                        </p>
+                        <div class="shopping-cart__delivery__item__price">
+                            <p>R$ 84,00</p>
+                            <div class="amount-dishe-item">
+                                <span class="amount-dishe-item__subtract"></span>
+                                <span class="amount-dishe-item__current">1</span>
+                                <span class="amount-dishe-item__add"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-cart__delivery__item">
+                    <div class="shopping-cart__delivery__item__container-img">
+                        <img src="images/home/prato-1.jpg" alt="">
+                    </div>
+                    <div class="shopping-cart__delivery__item__text">
+                        <h2 class="shopping-cart__delivery__item__text__title">Kawaii Sushi</h2>
+                        <p class="shopping-cart__delivery__item__text__paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis 
+                        </p>
+                        <div class="shopping-cart__delivery__item__price">
+                            <p>R$ 84,00</p>
+                            <div class="amount-dishe-item">
+                                <span class="amount-dishe-item__subtract"></span>
+                                <span class="amount-dishe-item__current">1</span>
+                                <span class="amount-dishe-item__add"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Informações do pedido -->
+            <section class="shopping-cart__delivery__info">
+                <p><span class="text__subtotal">Subtotal</span><span>R$ 200,00</span></p>
+                <p><span class="text__delivery">Taxa de entrega </span><span>R$ 5,00</span></p>
+                <p><span class="text__total">Total </span><span class="text__amount">R$ 205,00</span></p>
+            </section>
+
+            <!-- Endereço --> 
+            <section class="shopping-cart__delivery__form-payment-address">
+                <form action="" class="form">
+                    <h2 class="shopping-cart__delivery__form-payment-address__title">Formas de pagamento</h2>
+                    <div class="shopping-cart__delivery__form-payment-address__payment-options">
+                        <label class="radio-input-box">Cartão de crédito
+                            <input type="radio" name="radio">
+                            <span class="radio-icon-checkmark"></span>
+                        </label>
+                        <label class="radio-input-box">Cartão de débito
+                            <input type="radio" name="radio">
+                            <span class="radio-icon-checkmark"></span>
+                        </label>
+                        <label class="radio-input-box">Vale refeição
+                            <input type="radio" name="radio">
+                            <span class="radio-icon-checkmark"></span>
+                        </label>
+                        <label class="radio-input-box">Dinheiro
+                            <input type="radio" name="radio">
+                            <span class="radio-icon-checkmark"></span>
+                        </label>
+                        <label class="radio-input-box">Pix
+                            <input type="radio" name="radio">
+                            <span class="radio-icon-checkmark"></span>
+                        </label>
+                    </div>
+                    <h2 class="shopping-cart__delivery__form-payment-address__title">Endereço</h2>
+                    <div class="background-address">
+                        <div class="form__box">
+                            <label class="form__box__label" for="public-place">Logradouro</label>
+                            <div class="form__box__input-icon">
+                                <input id="public-place" type="text" placeholder="Digite seu logradouro">
+                            </div>
+                        </div>
+                        <div class="form-container-flex">
+                            <div class="form__box">
+                                <label class="form__box__label" for="CEP">CEP</label>
+                                <div class="form__box__input-icon">
+                                    <input id="CEP" type="CEP" placeholder="Digite seu CEP">
+                                </div>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__box__label" for="number">Número</label>
+                                <div class="form__box__input-icon">
+                                    <input id="number" type="text" placeholder="Digite seu número">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-container-flex">
+                            <div class="form__box">
+                                <label class="form__box__label" for="district">Bairro</label>
+                                <div class="form__box__input-icon">
+                                    <input id="district" type="text" placeholder="Digite o nome do bairro">
+                                </div>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__box__label" for="complement">Complemento</label>
+                                <div class="form__box__input-icon">
+                                    <input id="complement" type="text" placeholder="Informe a casa e etc.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-container-flex">
+                            <div class="form__box">
+                                <label class="form__box__label" for="city">Cidade</label>
+                                <div class="form__box__input-icon">
+                                    <input id="city" type="text" placeholder="Nome da cidade">
+                                </div>
+                            </div>
+                            <div class="form__box">
+                                <label class="form__box__label" for="uf">UF</label>
+                                <div class="form__box__input-icon">
+                                    <input id="uf" type="text" placeholder="Nome da UF">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-container-flex-button">
+                        <button class="form__button">
+                            Finalizar pedido
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container-img">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="container">
+            <h1 class="footer__title">DRAGON SUSHI</h1>
+        </div>
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__info__links">
+                    <h2 class="footer__info__title">Links</h2>
+                    <ul class="footer__info__links__list">
+                        <li><a href="#">> Home</a></li>
+                        <li><a href="#cardapio">> Cardápio</a></li>
+                        <li><a href="#quem-somos">> Quem Somos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info__social">
+                    <h2 class="footer__info__title">Social</h2>
+                    <ul class="footer__info__links__list">
+                        <li><a href="#">> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info__address">
+                    <h2 class="footer__info__title">Endereço</h2>
+                    <ul class="footer__info__links__list">
+                        <li>R. Guiapá, 678, Villa Leopoldina,<br> São Paulo - SP.</li>
+                        <li>Telefone: (11) 3834-4111</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer__copyright">
+            <p class="footer__all-rights-reserved">
+                Copyright © 2022 Dragon Sushi | Todos os Direitos Reservados
+            </p>
+            <p class="footer__developers">
+                Desenvolvido por Westen
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
