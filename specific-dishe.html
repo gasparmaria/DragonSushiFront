@@ -125,13 +125,11 @@
                 </p>
             </div>
         </div>
-        <div class="container flex">
+        <form class="container flex">
             <div class="specific-dishe__note">
                 <h2 class="specific-dishe__note__title">OBSERVAÇÃO:</h2>
-                <p class="specific-dishe__note__paragraph">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo inventore ea exercitationem quam, corporis ex fuga aperiam expedita laudantium itaque tenetur, facere aspernatur, eos voluptatibus amet vero non. Optio, laborum!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima molestiae dicta, debitis maiores consectetur tempora voluptates doloremque eligendi fugit tenetur recusandae aspernatur repellat harum eum ex facere labore qui.
-                </p>
+                <textarea class="specific-dishe__note__textarea"></textarea>
+                </textarea>
             </div>
             <div class="specific-dishe__price">
                 <div class="specific-dishe__price__unitary">
@@ -141,13 +139,13 @@
                     <p>Subtotal: R$ 168,00</p>
                     <div class="amount-dishe-item">
                         <span class="amount-dishe-item__subtract"></span>
-                        <span class="amount-dishe-item__current">1</span>
+                        <input type="number" value="1" class="amount-dishe-item__current" readonly></input>
                         <span class="amount-dishe-item__add"></span>
                     </div>
                 </div>
-                <button class="accent-button">Adicionar ao carrinho</button>
+                <button type="submit" class="accent-button">Adicionar ao carrinho</button>
             </div>
-        </div>
+        </form>
     </main>
     <footer class="footer">
         <div class="footer__container-img">
