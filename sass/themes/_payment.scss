@@ -1,0 +1,167 @@
+.payment {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $primary-text-color;
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 40px;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: stretch;
+        overflow: hidden;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .payment-title {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            &.bold {
+                font-weight: bold;
+                & + p {
+                    font-weight: 600;
+                }
+            }
+        }
+        .payment-accent-title {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: $primary-color;
+            font-weight: 600;
+        }
+        .accent-paragraph {
+            border: 1px solid #4e4e4e;
+            max-width: 170px;
+            border-radius: 5px;
+            padding: 10px 5px;
+        }
+        &__command {
+            &__title {
+                margin: 0;
+                text-align: center;
+                font-size: 32px;
+            }
+            &__table {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+        }
+        flex: 1 1 400px;
+    }
+    &__methods {
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 2px;
+            height: 120%;
+            background-color: #919191;
+            top: -7%;
+            left: -7%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex: 10 1 300px;
+        div {
+            width: 100%;
+        }
+        &__title {
+            width: 10px;
+            width: 100%;
+            text-align: center;
+            color: $primary-color;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        &__info {
+            display: flex;
+            font-size: 16px;
+            justify-content: space-between;
+            border-bottom: 2px solid rgb(136, 136, 136);
+            padding: 20px 10px 10px 0;
+        }
+        &__select-payment {
+            margin: 20px 0;
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            select, input {
+                font-size: 16px;
+                outline: none;
+                padding: 10px;
+                flex: 1 1 400px;
+            }
+            select {
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
+                position: relative;
+                // appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background: transparent;
+                background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 30 20' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+                background-repeat: no-repeat;
+                background-position-x: 100%;
+                background-position-y: 5px;
+                margin-right: 2rem;
+                padding: 1rem;
+                padding-right: 10rem;
+                &::after {
+                    content: "";
+                    width: 0.8em;
+                    height: 0.5em;
+                    background-color: var(--select-arrow);
+                    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+                  }
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+            input[type=number] {
+            -moz-appearance: textfield;
+            }
+        }
+        &__buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            border-bottom: 2px solid rgb(136, 136, 136);
+            padding-bottom: 20px;
+            .accent-button {
+                height: 40px;
+                border-radius: 5px;
+                font-weight: 600;
+                &:nth-child(2) {
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                    background: none;
+                }
+            }
+        }
+        &__finish {
+            display: flex;
+            justify-content: flex-end;
+            .accent-button {
+                height: 40px;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+}
