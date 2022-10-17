@@ -1,0 +1,28 @@
+.product_register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 16px;
+    min-height: 100vh;
+    gap: 16;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f4;
+
+    @media (max-width: 1050px) {
+        .product_register {
+            .line-break {
+                display: none;
+            }
+            }
+            .form {
+                order: 0;
+                margin: 20px 0;
+            }
+        }
+}
+
+.checkbox_text{
+    text-align: center;
+}

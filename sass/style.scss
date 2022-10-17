@@ -32,8 +32,18 @@
 @import 'themes/_edit-order';
 @import 'themes/_payment';
 
+@import 'themes/_employee';
+@import 'themes/_inventory';
+@import 'themes/_manager';
+@import 'themes/_registration-order';
+@import 'themes/_restaurant-management';
+@import 'themes/_book';
+@import 'themes/_employee-inventory';
+@import 'themes/_employee-register';
+@import 'themes/_client-register';
+@import 'themes/_edit-book';
+@import 'themes/_product-register';
+@import 'themes/_book-register';
+
 // Vendors
 @import 'vendors/_normalize';
-
-// node-sass -w --output-style compressed sass/style.scss css/style.css
-// A ordem dos importes influência na sobreposição de classes

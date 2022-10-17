@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="Restaurante, Japonês, Delivery, Sushi, Temaki, ">
+    <meta name="description" content="Faça já seu pedido na Dragon Sushi! Confira nossos pratos, ofertas e muito mais!">
+    <meta name="author" content="Gabriel S. Evangelista, Henrique R. Pereira, Guilherme Ferreira, Gustavo Basilio, Maria Eduarda G. Lima, Guilherme Lemes">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 
+        Fonts: Montserrat, Roboto and Patua One
+
+        font-family: 'Montserrat', sans-serif;
+          - Font weight: 300, 400, 600 and 70
+
+        font-family: 'Roboto', sans-serif;
+          - Font weight: 300, 400 and 700
+
+        font-family: 'Patua One', cursive;
+          - Font weight: 400
+
+        font-family: 'Open Sans', sans-serif;
+          - Font weight: 300, 400 and 700
+    -->
+
+    <script defer src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Dragon Sushi - Restaurante Japonês</title>
+</head>
+<body>
+    <header class=" header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="header__container-menu-icon">
+                <div class="header__search-bar-icon">
+                    <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                </div>
+                <div class="header__mobile-menu">
+                    <div class="header__mobile-menu__line-one"></div>
+                    <div class="header__mobile-menu__line-two"></div>
+                    <div class="header__mobile-menu__line-three"></div>
+                </div>
+            </div>
+            <nav class="header__navigation-menu">
+                <ul class="header__navigation-menu__list">
+                    <div class="header__navigation-menu__list__links">
+                        <li class="header__navigation-menu__list__links__item"><a href="#">Home</a></li>
+                        <li class="header__navigation-menu__list__links__item"><a href="#cardapio">Cardápio</a></li>
+                        <li class="header__navigation-menu__list__links__item"><a href="#quem-somos">Quem somos</a></li>
+                    </div>
+                    <div class="header__navigation-menu__list__container">
+                        <div class="search-bar header__navigation-menu__list__search-bar">
+                            <a class="search-bar__icon header__navigation-menu__list__search-bar__icon" href="#">
+                                <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                            </a>
+                            <input class="search-bar__txt header__navigation-menu__list__search-bar__txt" type="text"
+                            placeholder="O que deseja?">
+                        </div>
+                        <div class="header__navigation-menu__list__buttons">
+                            <a class="accent-button header__navigation-menu__list__buttons__item" href="#">Cadastra-se</a>
+                            <a class="accent-button header__navigation-menu__list__buttons__item" href="#">Entrar</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+           <div class="header__profile__container__tooltip-shopping-cart">
+                <div class="header__profile__shopping-cart">
+                    <a href="#">
+                        <span>
+                            <iconify-icon class="icon-iconify" icon="entypo:shopping-cart"></iconify-icon>
+                        </span>
+                    </a>
+                </div>
+                <div class="header__profile__tooltip">
+                    <iconify-icon class="iconify-icon" icon="gg:profile"></iconify-icon>
+                    <div class="header__profile__tooltip__text">
+                        <h1>Minha conta</h1>
+                        <ul>
+                            <li><a href="#">Editar perfil</a></li>
+                            <li><a href="#">Histórico de pedidos</a></li>
+                        </ul>
+                    </div>
+                </div>    
+           </div>           
+        </div>
+        <div class="search-bar-mobile">
+            <div class="search-bar mobile header__navigation-menu__list__search-bar">
+                <a class="search-bar__icon header__navigation-menu__list__search-bar__icon" href="#">
+                    <iconify-icon class="iconify-icon" icon="eva:search-fill"></iconify-icon>
+                </a>
+                <input class="search-bar__txt header__navigation-menu__list__search-bar__txt" type="text"
+                placeholder="O que deseja?">
+            </div>
+        </div>
+    </header>
+    <div class="registration_order_title">
+        <a>Cadastro de pedido</a>
+    </div>
+        <main class="registration_order_page">        
+    <div class="container_registration_order">
+            <div class="table">
+
+                <div class="content_registration_order">
+
+                    <img src="images/inventory/comida-1.png">
+
+                    <h1 class="registration_order_text">Nigiri Sushi</h1>
+
+                    <div class="buttons_edit">
+                        <button class="buttons" onClick="DiminuiPerc();">-</button>
+                        <button class="buttons" onClick="AumentaPerc();">+</button>
+                    </div>
+
+                    <div class="show_result">
+                        <input type='text' id="percentual" name="percentual" value='0'/>
+                    </div>
+
+ 
+                    <div class="order_price">
+                        <a class="price_tag">R$ </a><input type='text' id="price" name="price" value='0'/>
+                    <!--<h1 class="registration_order_price">R$1,99</h1>-->
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="content_registration_order">
+
+                    <img src="images/inventory/comida-2.png">
+
+                    <h1 class="registration_order_text">Kawaii Sushi</h1>
+
+                    <div class="buttons_edit">
+                        <button class="buttons" onClick="DiminuiPerc2();">-</button>
+                        <button class="buttons" onClick="AumentaPerc2();">+</button>
+                    </div>
+
+                    <div class="show_result">
+                    <input type='text' id="percentual2" name="percentual2" value='0'/>
+                    </div>
+
+ 
+                    <div class="order_price">
+                        <a class="price_tag">R$ </a><input type='text' id="price2" name="price2" value='0'/>
+                    <!--<h1 class="registration_order_price">R$1,99</h1>-->
+                    </div>
+
+                </div>
+
+
+
+                <div class="content_registration_order">
+
+                    <img src="images/inventory/comida-3.png">
+
+                    <h1 class="registration_order_text">Sushi and <br> chopsticks</h1>
+
+                    <div class="buttons_edit">
+                        <button class="buttons" onClick="DiminuiPerc3();">-</button>
+                        <button class="buttons" onClick="AumentaPerc3();">+</button>
+                    </div>
+
+                    <div class="show_result">
+                        <input type='text' id="percentual3" name="percentual3" value='0'/>
+                    </div>
+
+ 
+                    <div class="order_price">
+                        <a class="price_tag">R$ </a><input type='text' id="price3" name="price3" value='0'/>
+                    <!--<h1 class="registration_order_price">R$1,99</h1>-->
+                    </div>
+
+                </div>
+
+
+
+                <div class="content_registration_order">
+
+                    <img src="images/inventory/comida-4.png">
+
+                    <h1 class="registration_order_text">Naruto Sushi</h1>
+
+                    <div class="buttons_edit">
+                        <button class="buttons" onClick="DiminuiPerc4();">-</button>
+                        <button class="buttons" onClick="AumentaPerc4();">+</button>
+                    </div>
+
+                    <div class="show_result">
+                        <input type='text' id="percentual4" name="percentual4" value='0'/>
+                    </div>
+
+ 
+                    <div class="order_price">
+                        <a class="price_tag">R$ </a><input type='text' id="price4" name="price4" value='0'/>
+                    <!--<h1 class="registration_order_price">R$1,99</h1>-->
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="content_registration_order">
+
+                    <img src="images/inventory/comida-2.png">
+
+                    <h1 class="registration_order_text">Hot Roll</h1>
+
+                    <div class="buttons_edit">
+                        <button class="buttons" onClick="DiminuiPerc5();">-</button>
+                        <button class="buttons" onClick="AumentaPerc5();">+</button>
+                    </div>
+
+                    <div class="show_result">
+                        <input type='text' id="percentual5" name="percentual5" value='0'/>
+                    </div>
+
+ 
+                    <div class="order_price">
+                        <a class="price_tag">R$ </a><input type='text' id="price5" name="price5" value='0'/>
+                    <!--<h1 class="registration_order_price">R$1,99</h1>-->
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="content_registration_order">
+
+                    <img src="images/inventory/comida-1.png">
+
+                    <h1 class="registration_order_text">Temaki</h1>
+
+                    <div class="buttons_edit">
+                        <button class="buttons" onClick="DiminuiPerc6();">-</button>
+                        <button class="buttons" onClick="AumentaPerc6();">+</button>
+                    </div>
+
+                    <div class="show_result">
+                        <input type='text' id="percentual6" name="percentual6" value='0'/>
+                    </div>
+ 
+                    <div class="order_price">
+                        <a class="price_tag">R$ </a><input type='text' id="price6" name="price6" value='0'/>
+                    <!--<h1 class="registration_order_price">R$1,99</h1>-->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+                <!--<div class="order_price_border_total">
+                            <h1 class="order_price_title_total">Lista</h1> 
+
+                        <a class="order_price_total_text"><b>x</b> Nigiri Sushi</a>
+                        <a class="order_price_total_text"><b>x</b> Kawaii Sushi</a>
+                        <a class="order_price_total_text"><b>x</b> Sushi and chopsticks</a>
+                        <a class="order_price_total_text"><b>x</b> Naruto Sushi</a>
+                        <a class="order_price_total_text"><b>x</b> Hot Roll</a>
+                        <a class="order_price_total_text"><b>x</b> Temaki</a>
+                </div>-->
+
+            <div class="order_price_border_total">
+                        <h1 class="order_price_title_total">Lista</h1>
+
+                    <a class="order_price_total_text">
+                       <input type='text' id="list1" name="list1" value='0'/><b> x</b> Nigiri Sushi
+                    </a>
+
+                    <a class="order_price_total_text">
+                        <input type='text' id="list2" name="list2" value='0'/>
+                        <b>x</b> Kawaii Sushi
+                    </a>
+
+                    <a class="order_price_total_text">
+                        <input type='text' id="list3" name="list3" value='0'/>
+                        <b>x</b> Sushi and chopsticks
+                    </a>
+
+                    <a class="order_price_total_text">
+                        <input type='text' id="list4" name="list4" value='0'/>
+                        <b>x</b> Naruto Sushi
+                    </a>
+
+                    <a class="order_price_total_text">
+                        <input type='text' id="list5" name="list5" value='0'/>
+                        <b>x</b> Hot Roll
+                    </a>
+
+                    <a class="order_price_total_text">
+                        <input type='text' id="list6" name="list6" value='0'/>
+                        <b>x</b> Temaki
+                    </a>
+                </div>
+
+    </div>
+
+                
+        </main>
+    <footer class="footer">
+        <div class="footer__container-img">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="container">
+            <h1 class="footer__title">DRAGON SUSHI</h1>
+        </div>
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__info__links">
+                    <h2 class="footer__info__title">Links</h2>
+                    <ul class="footer__info__links__list">
+                        <li><a href="#">> Home</a></li>
+                        <li><a href="#cardapio">> Cardápio</a></li>
+                        <li><a href="#quem-somos">> Quem Somos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info__social">
+                    <h2 class="footer__info__title">Social</h2>
+                    <ul class="footer__info__links__list">
+                        <li><a href="#">> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer__info__address">
+                    <h2 class="footer__info__title">Endereço</h2>
+                    <ul class="footer__info__links__list">
+                        <li>R. Guiapá, 678, Villa Leopoldina,<br> São Paulo - SP.</li>
+                        <li>Telefone: (11) 3834-4111</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer__copyright">
+            <p class="footer__all-rights-reserved">
+                Copyright © 2022 Dragon Sushi | Todos os Direitos Reservados
+            </p>
+            <p class="footer__developers">
+                Desenvolvimento do Website: Westen
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

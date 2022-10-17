@@ -1,0 +1,124 @@
+.employee_inventory_page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    font-family: 'Montserrat';
+}
+
+.employee-inventory_title{
+    position: relative;
+}
+
+.content_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 253px;
+
+    & .employee_inventory_search{
+        width: auto;
+        height: 100%;
+        
+        background: none;
+        border: none;
+        border-bottom: 1px solid #595959;
+        padding-bottom: 8px;
+        
+        display: flex;
+        gap: 16px;
+        
+        & .employee_inventory_search_bar{
+            width: 500px;
+            outline: none;
+            border: none;
+            background: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+        
+        & .iconify-icon-book-page{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 20px;
+            color: #595959;
+        }
+    }
+    
+
+    & .btn_register_product{
+        background: none;
+        border: 2px solid #ED2736;
+        border-radius: 5px;
+        color: #ED2736;
+        padding: 12px 6px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 200ms ease-in-out;
+        &:hover{
+            background-color: #ED2736;
+            color: #ffffff;
+        }
+    }
+}
+
+.employee_inventory_content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.employee_inventory_box{
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+    
+}
+
+.box_itens{
+    display: flex;
+    height: 100px;
+    gap: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+    
+    align-items: center;
+    
+}
+
+.employee_inventory_header{
+    display: flex;
+    height: 50px;
+    gap: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+.id_container{
+
+    width: 4vh;
+    text-align: center;
+}
+
+.name_container{
+
+    width: 40vh;
+    text-align: center;
+}
+
+.quantity_container{
+
+    width: 40vh;
+    text-align: center;
+}
+
+.img_container{
+    width: 10vh;
+    text-align: center;
+}

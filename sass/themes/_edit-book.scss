@@ -1,0 +1,53 @@
+.logo {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    z-index: 1;
+    img {
+        width: 60px;
+    }
+}
+.sign-up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 16px;
+    min-height: 100vh;
+    gap: 16;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+#client-name{
+    width: 100%;
+    height: 50px;
+    background-color: #E0E0E0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: #3E3E3E;
+
+}
+
+@media (max-width: 1050px) {
+    .sign-up {
+        .line-break {
+            display: none;
+        }
+        .background-image {
+            padding: 20px 0 0 0;
+            img {
+                display: block;
+                width: 300px;
+            }
+        }
+        .form {
+            order: 0;
+            margin: 20px 0;
+        }
+    }
+}

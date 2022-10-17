@@ -1,0 +1,129 @@
+.book_page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F4F4F4;
+}
+
+.book_page_search{
+    width: 50%;
+
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+    padding: 16px 8px;
+    margin: 0 auto;
+    & .iconify-icon-book-page{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 24px;
+        color: #595959;
+    }
+
+    & .book_page_search_bar{
+        width: 90%;
+        height: 100%;
+        border: none;
+        background: none;
+        font-size: 24px;
+    }
+}
+
+.book_title{
+    a{        
+        color: #ED2736;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    width: 100%; 
+    text-align: center;   
+    margin-top: 45px;
+}
+
+.book_page_search_bar{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    width: 500px;
+    margin: 25px auto 0 auto; // cima direita baixo esquerda (vertical lateral)    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.book_page_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    grid-gap: 24px;
+    padding: 36px;
+
+    & .book_page_cards{
+        display:flex;
+        flex-direction: column;
+
+        padding: 24px 12px;
+        border: 1px solid black;
+        
+        border-radius: 15px; 
+        gap: 16px;
+
+        font-family: 'Montserrat';
+        & h1.card_title{
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+
+            color: #3E3E3E;
+        }
+
+        & > div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4px;
+            & a{
+                font-size: 16px;
+            }
+        }
+        
+        & > :last-child{
+            align-self: flex-end;
+            
+            & img{
+                width: 18px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.button_add{
+    position: fixed;
+
+    left: 95%;
+    top: 90%;
+
+    height: 48px;
+    width: 48px;
+    
+    background: #ED2736;
+    border: none;
+
+    border-radius: 100%;
+    cursor: pointer;
+
+    & .icon-add{
+        font-size: 36px;
+    }
+}
+
+        
+        
