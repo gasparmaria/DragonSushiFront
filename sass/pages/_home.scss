@@ -130,11 +130,11 @@
         img {
             position: absolute;
             display: block;
-            width: 250px;
+            width: 300px;
             transform: translateX(-50px);
             &.mokup-inverse {
-                width: 200px;
-                transform: scaleX(-1) translateX(-70px);
+                width: 275px;
+                transform: scaleX(1) translateX(-70px);
                 z-index: 1;
             }
         }
@@ -293,6 +293,7 @@
         &__img {
             img {
                 width: 225px;
+                
                 &.mokup-inverse {
                     width: 175px;
                     transform: scaleX(-1) translateX(-60px);
