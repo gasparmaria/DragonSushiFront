@@ -2,6 +2,11 @@
     display:flex;
     width: 100%;
     background-color: #F4F4F4;
+    .amount-dishe-item {
+        input {
+            background-color: inherit;
+        }
+    }
 }
 
 .registration_order_title{
