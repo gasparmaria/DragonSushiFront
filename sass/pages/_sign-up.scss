@@ -1,5 +1,4 @@
 .sign-up-page {
-    background-color: yellow !important;
     .logo {
         display: block;
         position: absolute;
@@ -21,7 +20,9 @@
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
-    &::before {
+    z-index: 2;
+    background-color: #ffffff !important;
+    &:before {
         display: block;
         content: '';
         position: absolute;
