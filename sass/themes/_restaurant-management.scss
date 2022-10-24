@@ -3,18 +3,19 @@
     flex-direction: column;
     width: 100%;
     background-color: #F4F4F4;
+    min-height: 100vh;
 }
 
 .management_title{  
     a{        
         color: #ED2736;
-        font-size: 30px;
+        font-size: 32px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
     }
     width: 100%; 
     text-align: center;   
-    margin-top: 45px;
+    margin: 45px 0;
 }
 
 .management_button{   
@@ -30,14 +31,15 @@
     width: 28px;
     height: 28px;
     background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button_title{
     display: flex;
     gap: 15px;
-    align-items: center;
-    margin-bottom: 10px;
-    
+    align-items: center;    
 }
 
 .management_container_title{
@@ -49,9 +51,9 @@
 
 .management_content{
     display: block;
-    margin-left: 80px;
-    margin-top: 60px;
     border-bottom: 4px solid #E0E0E0;
+    width: 90vw;
+    margin: 0px auto 0px auto;
 }
 
 .management_content .box{
@@ -59,14 +61,17 @@
     height: 0;
     overflow: hidden;
     transition: 0.5s;
-    overflow-y: auto;
+    // overflow-y: auto;
+    overflow: none;
 }
 
 .management_content.active .box{
     height: auto;
     padding: 32px;
-    border: 1px solid black;
-    border-radius: 60px;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    
 }
 
 .box_title{
