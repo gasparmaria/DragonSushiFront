@@ -1,0 +1,26 @@
+.not-found-dishe-page {
+    .restaurant-menu {
+        &__list-dishe {
+            min-height: 70vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        &__title-type-dishe {
+            margin: 50px;
+            border: none;
+            text-align: center;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: $primary-color;
+                width: 100%;
+                height: 2px;
+                margin-top: 20px;
+                transform: scaleX(0.5);
+            }
+        }
+    }
+}
