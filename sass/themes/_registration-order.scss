@@ -1,7 +1,9 @@
 .registration_order_page{
     display:flex;
+    justify-content: space-between;
     width: 100%;
     background-color: #F4F4F4;
+    min-height: 100vh;
     .amount-dishe-item {
         input {
             background-color: inherit;
@@ -9,10 +11,16 @@
     }
 }
 
+.box-container {
+    display: flex;
+    border: 2px solid orange;
+    overflow: hidden;
+}
+
 .registration_order_title{
     a{        
         color: #ED2736;
-        font-size: 35px;
+        font-size: 32px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
     }
@@ -44,7 +52,7 @@
 
 .registration_order_text{
     color: #3E3E3E;
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     width: 150px;
@@ -106,12 +114,15 @@ gap: 43px;
 
 .content_registration_order{
     display: flex;
-    width: 790px;
-    gap: 43px;
+    // width: 790px;
+    gap: 20px;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 13px;
-    border-bottom: 4px solid #E0E0E0;
-    padding-bottom: 13px;
+    border-bottom: 3px solid #E0E0E0;
+    padding: 20px;
+    
 }
 
 .order_price_title_total{
@@ -128,11 +139,12 @@ gap: 43px;
     flex-direction: column;
     border: 1px solid #3E3E3E;
     border-radius: 73px;
-    width: 60%;
-    height: 50%;
+    height: 500px;
+    overflow-y: auto;
     margin-left: 70px;
     margin-right: 250px;
     margin-top:140px;
+    
 }
 
 .order_price_total_text{
